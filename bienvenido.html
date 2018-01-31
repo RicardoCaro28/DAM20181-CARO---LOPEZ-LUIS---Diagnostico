@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="uft-8"/>
+    <title>Bienvenido Admin</title>
+  </head>
+  <body>
+    <h3>BIENVENIDO</h3>
+
+<script type="text/javascript">
+
+function factorial(){
+
+//-------
+
+    var t=document.createElement('table');
+    var row=document.createElement('tr');
+    var row2=document.createElement('tr');
+
+    var col=document.createElement('td');
+    var col2=document.createElement('td');
+    var col3=document.createElement('td');
+    
+    
+    col.innerHTML="Iteracion";
+    col3.innerHTML="Operacion";
+    col2.innerHTML="resultado";
+    row.innerHTML=""
+    row.appendChild(col);
+    row.appendChild(col3);
+    row.appendChild(col2);
+    t.appendChild(row);
+    t.setAttribute("border","1");
+
+    var id=document.getElementById("tbl");
+    tbl.appendChild(t);
+
+//-----
+var resultado = 1;
+ 
+for(var i=1; i<=document.getElementById ('n').value; i++) {
+  resultado *= i;
+}
+alert(resultado);
+
+}
+
+ function entero(e) {
+var as 
+as = e.keyCode 
+if (as > 31 && (as < 48 || as > 57)) {
+return false
+}
+return true
+}
+
+
+
+</script> 
+
+<form name=form>
+
+<P>numero: <input id="n" onkeypress="return entero(event)">
+	<br />
+	<br />
+	<br />
+<input onclick=factorial() type=button value=Calcular>	
+	<br />
+
+<div id="tbl"></div>
+
+</form> 
+
+  </body>
+</html>

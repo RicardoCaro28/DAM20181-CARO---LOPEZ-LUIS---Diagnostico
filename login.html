@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>Examen Diagnostico Practico</title>
+</head>
+
+<body>
+<script type="text/javascript">
+function inicia(){
+
+       if (document.form.password.value=='admin' && document.form.usuario.value=='admin'){ 
+        
+        document.form.submit(); 
+        
+        		} 
+    	
+    			else{ 
+         				alert("DATOS INCORRECTOS"); 
+    			} 
+} 
+</script> 
+<form name=form action="bienvenido.html">
+
+<P>Usuario: <input type=text name=usuario placeholder="usuario"> 
+	<br />
+	<br />
+<P>Password: <input type=password name=password placeholder="password"> 
+    <br/>
+    <br/>
+
+<input onclick=inicia() type=button value=Acceder>
+
+</form> 
+</body>
+</html>
